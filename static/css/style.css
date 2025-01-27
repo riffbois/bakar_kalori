@@ -114,9 +114,23 @@
   }
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-link {
+    margin: 0.5rem 0;
+  }
+  .navbar a {
+    font-size: 10px;
+  }
+}
+
 .navbar .navbar-brand,
 .navbar a.btn {
-  height: 75px;
+  /* height: 75px; */
 }
 
 .navbar .navbar-nav .nav-link {
@@ -143,7 +157,6 @@
   display: flex;
   position: relative;
   align-items: center;
-  background-image: url("../img/header.jpg");
   margin-top: -80px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,17 +165,19 @@
 
 .hero .content {
   padding: 1.8rem 8%;
-  max-width: 70rem;
+  /* max-width: 70rem; */
 }
 
 .hero .content h1 {
-  color: #ffffff;
+  color: #ff0000;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   line-height: center;
+  text-align: center;
 }
 
 .hero .content p {
-  color: #ffffff;
+  text-align: justify;
+  color: #ff0000;
   margin-top: 4px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   line-height: 1.4;
@@ -173,7 +188,7 @@
   margin-top: 60px;
 }
 .lottie-container {
-  margin-right: 20px; /* Adjust the margin as needed */
+  margin-left: 90px; /* Adjust the margin as needed */
 }
 /* table */
 table {
